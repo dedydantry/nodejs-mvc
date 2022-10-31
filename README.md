@@ -1,6 +1,6 @@
-## NODEJS MV BOILERPLATE
+# NODEJS MVC BOILERPLATE
 
-# Getting started
+## Getting started
 make sure sequelize cli has installed in your device
 
 ```
@@ -17,19 +17,27 @@ OR
 $ yarn install
 ```
 
-# Controller
+Running development mode
+```
+$ yarn run dev
+```
+OR
+```
+$ npm run dev
+```
+## Controller
 You can find controller at directory controller
 
-# Model
+## Model
 Folder directory at models
 generate model run this command: 
 ```
 $ sequelize model:create --name User
 ```
 
-command line will generate model user in directory models and migration file in directory migrations
+command line will generate file user in directory models and migration file in directory migrations
 
-# MIGRATIONS
+## MIGRATIONS
 run migration with following command:
 ```
 sequelize-cli db:migrate
@@ -40,7 +48,7 @@ Undo migration by command:
 npx sequelize-cli db:migrate:undo
 ```
 
-# SEEDER
+## SEEDER
 create seeder file
 ```
 npx sequelize-cli seed:generate --name demo-user
